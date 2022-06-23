@@ -1,8 +1,8 @@
 const express = require("express");
 const cors = require ("cors");
 const bodyparser = require('body-parser');
-const jtw = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+//const jtw = require('jsonwebtoken');
+//const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const app = express();
 const post = require('./Models/posts');
