@@ -45,7 +45,7 @@ app.all('*', function(req, res, next) {
 } );
 
 //Endpoints
-app.use("/api", router);
+//app.use("/api", router);
 
 app.get("/api/gett", function(req, res){
     res.send({
