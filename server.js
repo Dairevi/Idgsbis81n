@@ -13,7 +13,7 @@ const router = require('./Routes/posts');
 //    console.log("Failed to connect to database")
 //});
 
-//const port = 8080;
+const port = 8080;
 const protectedRoute = express.Router();
 app.set('key', 'secret');
 
@@ -62,7 +62,6 @@ app.post("/api/new", function(req, res){
     });
 });
 
-//app.listen(port, function(){
-//    console.log ("Api is running")
-//});
-app.listen(process.env.PORT || 5000)
+app.listen(port, function(){
+    console.log ("Api is running")
+});
