@@ -7,11 +7,11 @@ const mongoose = require('mongoose');
 const app = express();
 const post = require('./Models/posts');
 const router = require('./Routes/posts');
-mongoose.connect('mongodb://localhost:27017/testdb').then(() =>{
-    console.log("Connected to database")
-}).catch(() => {
-    console.log("Failed to connect to database")
-});
+//mongoose.connect('mongodb://localhost:27017/testdb').then(() =>{
+//    console.log("Connected to database")
+//}).catch(() => {
+//    console.log("Failed to connect to database")
+//});
 
 const port = 8080;
 const protectedRoute = express.Router();
